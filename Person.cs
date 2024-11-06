@@ -1,15 +1,10 @@
-namespace EmployeeApp
+public class Person
 {
-    public class Person
-    {
-        // Properties for first and last names
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+    public string FirstName { get; set; } = string.Empty;
+    public string LastName { get; set; } = string.Empty;
 
-        // Method to display the full name
-        public void SayName()
-        {
-            Console.WriteLine("Name: " + FirstName + " " + LastName);
-        }
+    public void SayName()
+    {
+        Console.WriteLine("Name: " + FirstName + " " + LastName);
     }
 }
